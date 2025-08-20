@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Duployan", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../assets/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  width: 420px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 40px;
+  color: white;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-box {
+  position: relative;
+  margin-top: 30px;
+  height: 50px;
+  border-radius: 40px;
+}
+.input-box input {
+  height: 100%;
+  width: 100%;
+  border: 2px soild rgb(255, 255, 255, 0.2);
+  background: transparent;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 2px white solid;
+  color: white;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 20px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: 10px 0 15px;
+}
+
+.sub-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sub-container a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px 0;
+  border-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #cacaca;
+  transform: translateY(-2px);
+}
+
+p {
+  margin: 20px 0 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 14.5px;
+}
+
+.login-form p > a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.login-form p > a:hover {
+  text-decoration: underline;
+}
